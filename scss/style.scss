@@ -1,0 +1,409 @@
+body{
+    font-family: "Outfit", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 100%;
+}
+
+@mixin font($w, $s, $lh, $align){
+    font-size: $s;
+    font-weight: $w;
+    line-height: $lh;
+    text-align: $align;
+}
+
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 17px;
+}
+
+ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    font-family: Outfit;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.16px;
+    color: black;
+}
+
+.btn{
+    border: none;
+    width: Fixed (129px)px;
+    height: Fixed (56px)px;
+    padding: 13px 20px 13px 20px;
+    gap: 10px;
+    border-radius: 20px;
+    background: rgba(245, 71, 73, 1);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.16px;
+    text-align: center;
+    color: white;
+    display: flex;
+}
+
+.login{
+    display: flex;
+    gap: 38px;
+}
+
+.btn:active{
+    background: transparent;
+    color: black;
+    border: 2px solid rgba(245, 71, 73, 1);
+}
+
+.btn1{
+    border: none;
+    width: 191px;
+    height: 50px;
+    top: 172px;
+    left: 150px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    background: rgba(245, 71, 73, 0.1);
+    color: rgba(245, 71, 73, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 100.8px;
+    text-align: left;
+}
+
+span{
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 100.8px;
+    text-align: left;
+    color: rgba(245, 71, 73, 1);
+}
+
+.lorem{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    color: rgba(36, 20, 21, 0.6);
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+
+.btn2{
+    width: Fixed (193px);
+    height: Fixed (60px);
+    top: 670px;
+    left: 150px;
+    padding: 13px 20px 13px 20px;
+    gap: 10px;
+    border-radius: 20px;
+    font-family: Outfit;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.16px;
+    text-align: center;
+    color: white;
+    background: rgba(245, 71, 73, 1);
+    border: none;
+}
+
+.btn1:hover{
+    background: rgba(245, 71, 73, 1);
+    color: white;
+    transition: 0.3s;
+}
+
+.btn2:hover{
+    background-color: transparent;
+    border: 3px solid rgba(245, 71, 73, 1);
+    color: rgba(245, 71, 73, 1);
+}
+
+.btn3{
+    border: none;
+    background: rgba(245, 71, 73, 0.1);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+
+.play{
+    margin-left: 35px;
+    margin-right: 15px;
+}
+
+.btns{
+    display: flex;
+    align-items: center;
+}
+
+.header-middle{
+    display: flex;
+    align-items: center;
+
+}
+
+.delivery{
+    padding-bottom: 10px;
+}
+
+.imgs{
+    display: flex;
+}
+
+.img1{
+    position: relative;
+}
+
+.img2{
+    position: relative;
+    right: 15px;
+}
+
+.img3{
+    position: relative;
+    right: 30px;
+}
+
+.img4{
+    position: relative;
+    right: 45px;
+}
+
+.staring{
+    display: flex;
+}
+
+.people{
+    display: flex;
+    margin-top: 50px;
+}
+
+.reviewing{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    color: rgba(36, 20, 21, 1);
+}
+
+.rating{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+    color: rgba(36, 20, 21, 1);
+}
+
+.header-middle{
+    margin-top: 50px;
+    align-items: center;
+    gap: 20%;
+}
+
+.heading2{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50.4px;
+    text-align: center;
+    color: rgba(36, 20, 21, 1);
+    text-align: center;
+}
+
+.paragraph2010{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    color: rgba(36, 20, 21, 0.6);
+    text-align: center;
+}
+
+.for_images{
+    width: 262px;
+    height: 150px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: contain;
+}
+
+.block1{
+    width: 262px;
+    height: 161px;
+    padding: 16px;
+    gap: 16px;
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 5px 5px 20px 0px rgba(36, 20, 21, 0.08);
+}
+
+.name_star{
+    display: flex;
+}
+
+.delivery{
+    display: flex;
+}
+
+.free_delivery{
+    border-right: 1px solid rgba(159, 158, 154, 0.2);
+}
+
+.order{
+    border: none;
+    width: 230px;
+    height: 50px;
+    padding: 13px 20px 13px 20px;
+    gap: 10px;
+    border-radius: 20px;
+    background: rgba(245, 71, 73, 1);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.16px;
+    text-align: center;
+    color: white;
+}
+
+.name{
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    text-align: left;
+    padding-right: 10px;
+}
+
+.name_star{
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.wrap{
+    display: flex;
+    align-items: center;
+}
+
+.wrap2{
+    padding-top: 16px;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 100%;
+}
+
+.blocks1{
+    display: flex;
+    gap: 30px;
+}
+
+.blocks{
+    justify-content: center;
+    display: grid;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.paragraph2010{
+    padding-top: 16px;
+}
+
+.main{
+    margin-top: 150px;
+}
+
+.btn3{
+    display: flex;
+    gap: 20px;
+}
+
+.app-store{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.google-play{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.Download{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50.4px;
+    text-align: left;
+    color: rgba(36, 20, 21, 1);
+    padding-bottom: 16px;
+}
+
+.paragraph2{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    color: rgba(36, 20, 21, 0.6);
+    padding-bottom: 50px;
+}
+
+.app{
+    display: flex;
+    align-items: center;
+    gap: 197px;
+    margin-top: 100px;
+}
+
+.obj{
+    width: 439.01px;
+    height: 610.69px;
+    object-fit: contain;
+}
+
+.review22{
+    background: rgba(245, 71, 73, 0.05px);
+}
+
+.container1 {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.top{
+    justify-content: space-between;
+}
+
+.btns3{
+    display: flex;
+}
+
+.black_arrow{
+    border: none;
+    width: 500px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(245, 71, 73, 1);
+}
